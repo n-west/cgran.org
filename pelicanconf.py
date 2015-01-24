@@ -26,5 +26,7 @@ DEFAULT_PAGINATION = False
 
 THEME= '/home/ravi/sandbox/cgran-frontend/proto-pybombs'
 
-DIRECT_TEMPLATES = ('index',)
-PAGE_SAVE_AS = ''
+DIRECT_TEMPLATES = ('index', 'recipelist',)
+
+## custom page generated with a jinja2 template
+#TEMPLATE_PAGES = {'pages/recipelist.html': 'recipelist.html'}

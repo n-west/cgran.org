@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container" style="text-align: center; padding-top: 30px; padding bottom: 20px;">
+    <h1>OOTs extends GNU Radio's capabilities</h2>
+    <div class="form-group" style="padding-bottom: 40px; padding-top: 40px;">
+        <input class="form-control floating-label" id="focusedInput" type="text" placeholder="Search for OOT's">
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+	    <div class="well infobox">
+	        <h3>gr-foo</h3>
+		<p class="lead">
+		gr-foo is a collection of FEC encoder and decoder blocks.
+		</p>
+	    </div>
+	</div>
+	<div class="col-lg-6 col-md-6 col-sm-6">
+	    <div class="well infobox">
+	        <h3>gr-foomatic</h3>
+		<p class="lead">
+		gr-foomatic is a collection of spectral esitimation tools,
+		which extends gr-spectral estimation capabilties.
+		</p>
+	    </div>
+	</div>
+    </div>
+</div>
+{% endblock %}
