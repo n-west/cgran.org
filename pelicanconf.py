@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 
 AUTHOR = u'pybombs'
 SITENAME = u'CGRAN-Frontend'
-SITEURL = 'https://ninjacomics.github.io/cgran'
 
 PATH = 'content'
 
