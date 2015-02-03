@@ -24,7 +24,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME= '/home/ravi/sandbox/cgran-frontend/proto-pybombs'
+THEME= 'proto-pybombs'
 
 DIRECT_TEMPLATES = ('index', 'recipelist',)
 
