@@ -26,6 +26,7 @@ DEFAULT_PAGINATION = False
 THEME= 'proto-pybombs'
 
 DIRECT_TEMPLATES = ('index', 'recipelist',)
+PAGE_PATHS = ["oot_modules"]
 
 ## custom page generated with a jinja2 template
 #TEMPLATE_PAGES = {'pages/recipelist.html': 'recipelist.html'}
