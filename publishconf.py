@@ -10,7 +10,6 @@ import sys
 sys.path.append(os.curdir)
 from pelicanconf import *
 
-SITEURL = 'https://ninjacomics.github.io/cgran'
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = ''
