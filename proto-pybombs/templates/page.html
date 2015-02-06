@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% if page.category == "oot_modules" %}
+
+<div class="container">
+<div class="page-header" id="banner" style="margin-bottom: 0px">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12">
+<div class="well infobox">
+  <div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3">
+    <img src="theme/images/assets/identicono.png">
+  </div>
+  <div class="col-lg-8 col-md-8 col-sm-8">
+    <h2>{{ page.title }}</h2>
+    <span class="status-badge">
+    {{ page.type }}
+    </span> 
+    <p class="lead" style="padding-top: 30px">
+    <b> Developer: </b> {{ page.author }}
+    </p>
+    <p class="lead">
+    {{ page.description }}
+    </p>
+  </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container lead">
+  <h2 style="padding-bottom: 30px;">Module Info</h2>
+  {{ page.content }}
+</div>
+</div>
+
+{% endif %}
+{% endblock %}
+
+
