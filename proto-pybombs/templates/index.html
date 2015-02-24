@@ -1,84 +1,133 @@
 {% extends "base.html" %}
 {% block content %}
-
-<div class="header-panel" style="text-align: center; height: 100px;
-       	background: snow; padding-top: 20px; padding-bottom: 20px;">
-    <img src="theme/images/assets/gr-cgran-webbanner.png"/>
-</div>
-<div style="background: white">
-<div class="container" style="text-align: center; padding-top: 20px;">
-<div class id="banner">
-    <h2> Browse ~ Checkout ~ Hack </h2>
-    <div class style="padding-top: 20px; padding-bottom:20px;">
-        <img src="theme/images/assets/penta.png"/>
-    </div>
-    <p class="lead">The Comprehensive GNU Radio Archive Network (CGRAN) is a
-    free and open source repository of third party GNU Radio applications that
-    are not officially supported by the GNU Radio project. CGRAN is a great way
-    to find GNU Radio projects to use, build from, or gain exposure to a project
-    you have built. It is tightly coupled with PyBOMBS and GNU Radio to build a
-    better SDR and GNU Radio eco-system.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="container" style="padding-top: 30px">
+<div class="headerband" id="banner">
     <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center;
-	    padding-top: 30px;">
-        <img src="theme/images/assets/pybombs.gif"/>
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+            <div id="headimage">
+		<div>
+	        <img src="theme/images/assets/cgran-penta.png">
+	        </div>
+	    </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+                <h1 style="font-size: 54px;">CGRAN</h1>
+		<p class="lead" style="padding-top: 30px;">
+		The Comprehensive GNU Radio Archive Network (CGRAN) is a free
+	       	open source repository for 3rd party GNU Radio applications
+	      	a.k.a Out Of Tree Modules that are not officially supported by
+	       	the GNU Radio project.
+		</p>
+		<a href="#gr-table" 
+			class="btn btn-sup btn-material-deeppurple" 
+			style="color: #fff;">
+                    <img src="theme/images/assets/arrow_downward.png">
+		    <span>Explore gr-OOT Modules</span>
+	            <div class="ripple-wrapper"></div>
+	        </a>
+            <div>
+                 <a href="javascript:void(0)" 
+		    class="btn btn-default btn-raised" 
+		    style="color: #fd6b5c; background: #fff">
+                <img src="theme/images/assets/arrow_orange.png">
+		<span>Create gr-oot module</span>
+	        </a>
+                <a href="javascript:void(0)" 
+		    class="btn btn-default btn-raised" 
+		    style="color: #fd6b5c; background: #fff">
+                <img src="theme/images/assets/doxygen_asset.png">
+		<span>Submit gr-oot module</span>
+	        </a>
+            </div>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-8 col-md-8 col-sm-8">
-    <h2> PyBOMBS </h2>
-    <p class="lead">PyBOMBS (Python Build Overlay Managed Bundle System) is the
-    new GNU Radio install management system for resolving dependencies and
-    pulling in out-of-tree projects.
-    </p>
-    <p class="lead">One of the main purposes of PyBOMBS is to aggregate out-of-
-    tree projects, which means that PyBOMBS needs to have new recipes for any
-    new project. We have done a lot of the initial work to get known projects
-    into the PyBOMBS system as is, but we will need project developers for new
-    OOT projects or other projects not currently listed to help us out with this
-    effort.
-    </p>
+</div>
+<div class="row" style="padding-top: 30px;">
+    <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="well">
+	    <h2 style="color: #fd6b5c;">GNU Radio</h2>
+	    <p class="lead" style="padding-top: 30px;">
+	    GNU Radio is a free software development toolkit that provides 
+	    signal processing blocks to implement software-defined radios and 
+	    signal processing systems. 
+	    </p>
+	    <a href="javascript:void(0)" 
+		    class="btn btn-default btn-flat" 
+		    style="color: #fd6b5c;">
+                <img src="theme/images/assets/arrow_orange.png">
+		<span>GNU Radio Wiki</span>
+	    </a>
+            <a href="javascript:void(0)" 
+		    class="btn btn-default btn-raised" 
+		    style="color: #fd6b5c;">
+                <img src="theme/images/assets/doxygen_asset.png">
+		<span>Doxygen C++ Manual</span>
+	    </a>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+	    <div class="well">
+	    <h2 style="color: #fd6b5c;">PyBOMBS</h2>
+	    <p class="lead" style="padding-top: 30px;">
+	    PyBOMBS (Python Build Overlay Managed Bundle System) is the new 
+	    GNU Radio install management system for resolving dependencies and
+	    pulling in out-of-tree projects.
+	    </p>
+            <a href="javascript:void(0)" 
+		    class="btn btn-default btn-flat" 
+		    style="color: #fd6b5c;">
+                <img src="theme/images/assets/github.png">
+		<span>Fork on Github</span>
+	    </a>
+            <a href="javascript:void(0)" 
+		    class="btn btn-default btn-raised" 
+		    style="color: #fd6b5c;">
+                <img src="theme/images/assets/download_pkg.png">
+		<span>Download PyBOMBS</span>
+	    </a>
+            </div>
+        </div>
     </div>
+</div>
+<div class="container" id="gr-table">
+    <div style="text-align: center;">	    
+    <h2>Browse~Checkout~Hack</h2>
     </div>
-</div>
-<div class="container" style="padding-top: 30px; padding-bottom: 30px">
-<div class="row">
-<div class="col-lg-8 col-md-8 col-sm-8">
-    <h2> GNU Radio </h2>
-    <p class="lead">
-    GNU Radio is a free & open-source software development toolkit that provides
-    signal processing blocks to implement software radios. It can be used with
-    readily-available low-cost external RF hardware to create software-defined
-    radios, or without hardware in a simulation-like environment.
-    </p>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-4" style="text-align: center;
-       	padding-top: 30px;">
-    <img src="theme/images/assets/circle.png"/>
-</div>
-</div>
-</div>
-<div style="background: lavender;">
-<div class="container" style="padding-top: 20px; padding-bottom: 20px;">
-<div class="header" style="padding-top: 40px; padding-bottom: 40px;">
-<div class ="row">
-<div class="col-lg-4 col-md-4 col-sm-4">
-    <img src="theme/images/assets/triangle.png">
-</div>
-<div class="col-lg-8 col-md-8 col-sm-8">
-    <h2> Submit a gr-recipe </h2>
-    <p class="lead">
-        <ul>
-	<li> Contribute </li>
-	<li> Atomic </li>
-	</ul>
-    </p>
-</div>
-</div>
-</div>
-</div>
+    <table class="table table-striped sortable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Repository</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for module in pages %}
+    {% if module.category == "oot_modules" %}
+        <tr>
+            <td>
+                <a href="{{ module.url }}">
+                    {{ module.title }}
+                </a>
+            </td>
+            <td>
+                {{ module.type }}
+            </td>
+            <td>
+                {{ module.description }}
+            </td>
+            <td>
+                <a href="{{ module.repo }}">
+                    {{ module.repo }}
+                </a>
+            </td>
+        </tr>
+    {% endif %}
+    {% endfor %}
+    </tbody>
+    </table>
 </div>
 {% endblock %}

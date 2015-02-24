@@ -19033,8 +19033,9 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 .navbar.navbar,
 .navbar-default.navbar {
-  background-color: #ff5722;
-  color: rgba(255, 255, 255, 0.84);
+  background-color: #ffffff;
+  color: #fd6b5c;
+  margin-bottom: 0px;
 }
 .navbar.navbar .navbar-form .form-control-wrapper input.form-control::placeholder,
 .navbar-default.navbar .navbar-form .form-control-wrapper input.form-control::placeholder,

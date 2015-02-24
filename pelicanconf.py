@@ -25,7 +25,7 @@ DEFAULT_PAGINATION = False
 
 THEME= 'proto-pybombs'
 
-DIRECT_TEMPLATES = ('index', 'recipelist',)
+DIRECT_TEMPLATES = ('index',)
 PAGE_PATHS = ["oot_modules"]
 #STATIC_PATHS = ["js"]
 

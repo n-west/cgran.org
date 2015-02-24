@@ -5,13 +5,15 @@
     <link href="theme/css/bootstrap.min.css" rel="stylesheet">
     <link href="theme/css/material.css" rel="stylesheet">
     <link href="theme/css/ripples.min.css" rel="stylesheet">
+    <link href="theme/css/custom.css" rel="stylesheet">
     <link rel="stylesheet" href="theme/css/pygments.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="theme/js/sorttable.js"></script>
 </head>
 <body>
+<div class="headertop"></div>
 <div class="bs-component">
-<div class="navbar navbar-default" style="margin-bottom: 0px; background: #3b4969">
+<div class="navbar navbar-default">
     <div class ="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
@@ -22,11 +24,8 @@
             <a class="navbar-brand" href="index.html">CGRAN</a>
         </div>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="recipelist.html">OOT Modules</a></li>
-                <li><a href="javascript:void(0)">Documentation</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)">Documentation</a></li>
                 <li><a href="https://www.gnuradio.org">GNU Radio</a></li>
             </ul>
         </div>
@@ -49,7 +48,15 @@
                 $.material.init();
             });
 </script>
+<script>
+$(function () {
+		    $('#tableId').bootstrapTable(); // init via javascript
 
+		        $(window).resize(function () {
+				        $('#tableId').bootstrapTable('resetView');
+					    });
+			});
+</script>
 </body>
 <footer>
 <div class="header-panel" style="text-align: center; height: 50px; background: #3b4969;">
