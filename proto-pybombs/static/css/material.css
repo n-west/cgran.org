@@ -33740,35 +33740,3 @@ hr.on-light {
   pointer-events: none;
   color: #757575;
 }
-.status-badge {
-    box-sizing: border-box;
-    background-color: tomato;
-    color: snow;
-    padding-left: 5px;
-    padding-top: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
-.highlight {
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.pre {
-    display: block;
-    padding-top: 9.5px;
-    padding-bottom: 9.5px;
-    padding-left: 9.5px;
-    padding-right: 9.5px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-right: 0px
-    margin-left: 0px;
-    line-height: 1.42857143;
-    color: #333:
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: white;
-    border-radius: 4px;
-    border: none;
-}
-

@@ -12,6 +12,7 @@
     padding-top: 30px;
 }
 .pre {
+    background-color: #fff;
     display: block;
     padding-top: 9.5px;
     padding-bottom: 9.5px;
@@ -38,6 +39,12 @@
     height: inherit;
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.headband{
+    background-color: #ffdad0;
+    height: inherit;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 html, body {
 	overflow-x: hidden;
