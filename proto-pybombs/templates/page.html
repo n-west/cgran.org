@@ -16,10 +16,13 @@
               {{ page.type }}
               </span> 
               <p class="lead" style="padding-top: 30px">
-              <b> Developer: </b> {{ page.author }}
+              <b> Developer: </b> {{ page.contact.author }}
+              </p>
+              <p class="lead" style="padding-top: 30px">
+              <b> GNU Radio compatibility </b> {{ page.gr_compat.min }} - {{ page.gr_compat.max }}
               </p>
               <p class="lead">
-              {{ page.description }}
+              {{ page.brief }}
               </p>
             </div>
           </div>

@@ -28,3 +28,5 @@ THEME= 'proto-pybombs'
 
 DIRECT_TEMPLATES = ('index',)
 PAGE_PATHS = ['oot_modules']
+PLUGIN_PATHS = ['plugins/pelican-md-metayaml']
+PLUGINS = ['md_metayaml']

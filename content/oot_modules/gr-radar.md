@@ -9,6 +9,7 @@ stable_release: master
 gr_compat: {min: v3.7, max: v3.7.4}
 dependencies: {UHD, Qt, Qwt, python-matplotlib}
 description: A radar toolbox from GSoC '14
+repo: https://github.com/kit-cel/gr-radar.git
 ---
 
 The basic flowgraph for many radar applications is shown below. First a signal
