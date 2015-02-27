@@ -8,6 +8,7 @@ SITENAME = u'CGRAN-Frontend'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
+SITEURL = 'http://nathanwest.us/ravi'
 
 DEFAULT_LANG = u'en'
 
@@ -26,7 +27,7 @@ DEFAULT_PAGINATION = False
 THEME= 'proto-pybombs'
 
 DIRECT_TEMPLATES = ('index',)
-PAGE_PATHS = ["oot_modules"]
+PAGE_PATHS = ['oot_modules']
 #STATIC_PATHS = ["js"]
 
 ## custom page generated with a jinja2 template

@@ -7,6 +7,12 @@
     padding-right: 5px;
     padding-bottom: 5px;
 }
+table.borderless td,table.borderless th{
+     border: none;
+}
+.fixed-table-container {
+     border: none;
+}
 .highlight {
     padding-bottom: 30px;
     padding-top: 30px;

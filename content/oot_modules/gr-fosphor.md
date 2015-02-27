@@ -3,7 +3,6 @@ author: Sylvain Munaut
 description: OpenCL/GL accelerated spectrum analyzer. A GPU accelerated spectrum analysis blocks. Works with gr-osmosdr's spectrum analyzer tool
 type: Blocks
 repo: git://git.osmocom.org/gr-fosphor
-save_as: gr-fosphor.html
 
 While the OsmoSDR is still not available, some Osmocom team members (notably Steve Markgraf) have been hacking away on an alternative least-cost solution: rtl-sdr. So what is rtl-sdr? It is a creative form of using consumer-grade DVB-T USB receivers, turning them into fully-fledged software defined radios. Those DVB-T receivers supported by rtl-sdr are based on the Realtek RTL2832U chipset plus a tuner IC like the Elonics E4000
 
