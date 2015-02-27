@@ -28,7 +28,3 @@ THEME= 'proto-pybombs'
 
 DIRECT_TEMPLATES = ('index',)
 PAGE_PATHS = ['oot_modules']
-#STATIC_PATHS = ["js"]
-
-## custom page generated with a jinja2 template
-#TEMPLATE_PAGES = {'pages/recipelist.html': 'recipelist.html'}

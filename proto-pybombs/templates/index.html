@@ -21,21 +21,21 @@
 		<a href="#gr-table" 
 			class="btn btn-sup btn-material-deeppurple" 
 			style="color: #fff;">
-                    <img src="{{ SITEURL }}/theme/images/assets/arrow_downward.png">
-		    <span>Explore gr-OOT Modules</span>
+                    <i class="fa fa-list-ul"></i>
+		    <span>Explore GR-OOT Modules</span>
 	            <div class="ripple-wrapper"></div>
 	        </a>
             <div>
                  <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules" 
 		    class="btn btn-default btn-raised" 
 		    style="color: #fd6b5c; background: #fff">
-                <img src="{{ SITEURL }}/theme/images/assets/console.png">
+                <i class="fa fa-terminal"></i>
 		<span>Create gr-oot module</span>
 	        </a>
                 <a href="https://gnuradio.org/redmine/projects/pybombs/wiki/Contributing" 
 		    class="btn btn-default btn-raised" 
 		    style="color: #fd6b5c; background: #fff">
-                <img src="{{ SITEURL }}/theme/images/assets/doxygen_asset.png">
+                <i class="fa fa-upload"></i>
 		<span>Submit gr-oot module</span>
 	        </a>
             </div>
@@ -62,7 +62,7 @@
             <a href="https://gnuradio.org/doc/doxygen/index.html" 
 		    class="btn btn-default btn-raised" 
 		    style="color: #fd6b5c;">
-                <img src="{{ SITEURL }}/theme/images/assets/doxygen_asset.png">
+                <i class="fa fa-file-code-o"></i>
 		<span>Doxygen C++ Manual</span>
 	    </a>
             </div>
@@ -71,20 +71,20 @@
 	    <div class="well">
 	    <h2 style="color: #fd6b5c;">PyBOMBS</h2>
 	    <p class="lead" style="padding-top: 30px;">
-	    PyBOMBS (Python Build Overlay Managed Bundle System) is the new 
+	    PyBOMBS (Python Build Overlay Managed Bundle System) is the
 	    GNU Radio install management system for resolving dependencies and
 	    pulling in out-of-tree projects.
 	    </p>
             <a href="https://github.com/gnuradio/pybombs/" 
 		    class="btn btn-default btn-flat" 
 		    style="color: #fd6b5c;">
-                <img src="{{ SITEURL }}/theme/images/assets/github.png">
+                <i class="fa fa-github-square"></i>
 		<span>Fork on Github</span>
 	    </a>
             <a href="javascript:void(0)" 
 		    class="btn btn-default btn-raised" 
 		    style="color: #fd6b5c;">
-                <img src="{{ SITEURL }}/theme/images/assets/download_pkg.png">
+                <i class="fa fa-download"></i>
 		<span>Download PyBOMBS</span>
 	    </a>
             </div>
@@ -98,6 +98,7 @@
 
     <table data-toggle="table"
         data-sort-name="name" data-sort-order="desc"
+        data-cache="true"
         data-search="true"
         data-show-refresh="true"
         data-show-toggle="true"
@@ -106,9 +107,9 @@
     <thead>
         <tr>
             <th data-field="name" data-sortable="true">Name</th>
-            <th data-field="type" data-sortable="true">Type</th>
+            <th class="hidden-xs" data-field="type" data-sortable="true">Type</th>
             <th data-field="description" data-sortable="true">Description</th>
-            <th data-field="repo" data-sortable="true">Repository</th>
+            <th class="hidden-xs hidden-sm" data-field="repo" data-sortable="true">Repository</th>
         </tr>
     </thead>
     <tbody>
@@ -120,13 +121,13 @@
                     {{ module.title }}
                 </a>
             </td>
-            <td id="headimage">
+            <td class="hidden-xs">
                 {{ module.type }}
             </td>
             <td>
                 {{ module.description }}
             </td>
-            <td id="headimage">
+            <td class="hidden-xs hidden-sm">
                 <a href="{{ module.repo }}">
                     {{ module.repo }}
                 </a>
