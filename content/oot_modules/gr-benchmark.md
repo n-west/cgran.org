@@ -9,7 +9,7 @@ copyright_owner: Tim O'Shea
 stable_release: master
 gr_compat: {min: v3.7.2.1, max: v3.7.*}
 dependencies:
-description: >
+brief: >
     A performance measurement tool for GNU Radio
 repo: https://github.com/osh/gr-benchmark.md
 ---

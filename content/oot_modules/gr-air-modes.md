@@ -8,7 +8,7 @@ copyright_owner: Nick Foster
 stable_release: master
 gr_compat: {min: v3.5.0, max: v3.7.*}
 dependencies: {UHD, NumPy, SciPy, OSMOSDR, SQLite}
-description: >
+brief: >
     gr-air-modes implements a software-defined radio receiver for Mode S
     transponder signals, including ADS-B reports from equipped aircraft.
 repo: https://github.com/bistromath/gr-air-modes.git

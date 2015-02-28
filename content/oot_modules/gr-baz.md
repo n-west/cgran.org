@@ -8,7 +8,7 @@ copyright_owner: Balint Seeber
 stable_release: master
 gr_compat: {min: v3.6, max: v3.7.*}
 dependencies:
-description: >
+brief: >
     Personal collection of blocks for doing blind signal analysis
 repo: https://github.com/balint256/gr-baz.git
 ---

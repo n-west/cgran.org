@@ -8,8 +8,10 @@ copyright_owner:
     - Alexandre Csete
 stable_release: tags/2.3.0
 gr_compat: {min: v3.6, max: v3.7.*}
-dependencies: {OsmoSDR}
-description: >
+dependencies: 
+    - OsmoSDR
+    - Qt
+brief: >
     Gqrx can operate as a traditional AM/FM/SSB receiver with audio output or as an
     FFT-only instrument.
 repo: https://github.com/csete/gqrx.git
