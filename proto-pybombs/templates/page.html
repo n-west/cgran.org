@@ -5,7 +5,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="well infobox">
+        <div class="jumbotron">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3" id="headimage">
               <img src="{{ SITEURL }}/theme/images/assets/identicono.png">
@@ -15,15 +15,91 @@
               <span class="status-badge">
               {{ page.type }}
               </span> 
-              <p class="lead" style="padding-top: 30px">
-              <b> Developer: </b> {{ page.contact.author }}
-              </p>
-              <p class="lead" style="padding-top: 30px">
-              <b> GNU Radio compatibility </b> {{ page.gr_compat.min }} - {{ page.gr_compat.max }}
-              </p>
-              <p class="lead">
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Copyright owner</b>
+                </div>
+                <div class="col-md-6">
+                  {{ page.copyright_owner }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Contact</b>
+                </div>
+                <div class="col-md-6">
+                  {{ page.contact.author }}
+                </div>
+              </div>
+     
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Contact</b>
+                </div>
+                <div class="col-md-6">
+                  {{ page.contact.email }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Website</b>
+                </div>
+                <div class="col-md-6">
+                  <a href="{{ page.website }}">{{ page.website }}</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Repository</b>
+                </div>
+                <div class="col-md-6">
+                  <a href="{{ page.repo }}">{{ page.repo }}</a>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Stable refspec</b>
+                </div>
+                <div class="col-md-6">
+                  {{ page.stable_release }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>GNU Radio Compatibility</b>
+                </div>
+                <div class="col-md-6">
+                  {{ page.gr_compat.min }} - {{ page.gr_compat.max }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Dependencies</b>
+                </div>
+                <div class="col-md-6">
+                  {% if page.dependencies is iterable %}
+                  {% for dep in page.dependencies %}
+                    {{ dep }}
+                    {% if not loop.last %}, {% endif %}
+                  {% endfor %}
+                  {% else %}
+                    None
+                  {% endif %}
+                </div>
+              </div>
+
+
+              <div class="row">
               {{ page.brief }}
-              </p>
+              </div>
+
             </div>
           </div>
         </div>
