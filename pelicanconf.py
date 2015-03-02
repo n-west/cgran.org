@@ -26,7 +26,12 @@ DEFAULT_PAGINATION = False
 
 THEME= 'proto-pybombs'
 
-DIRECT_TEMPLATES = ('index',)
-PAGE_PATHS = ['oot_modules']
 PLUGIN_PATHS = ['plugins/pelican-md-metayaml']
 PLUGINS = ['md_metayaml']
+DIRECT_TEMPLATES = ['index',]
+PAGE_PATHS = ['oot_modules']
+LOAD_CONTENT_CACHE=False
+ARTICLE_EXCLUDE=['oot_modules']
+#STATIC_PATHS = ["js"]
+
+## custom page generated with a jinja2 template
