@@ -8,6 +8,7 @@ SITENAME = u'CGRAN-Frontend'
 PATH = 'content'
 
 TIMEZONE = 'Asia/Kolkata'
+SITEURL = 'http://nathanwest.us/ravi'
 
 DEFAULT_LANG = u'en'
 
@@ -25,6 +26,8 @@ DEFAULT_PAGINATION = False
 
 THEME= 'proto-pybombs'
 
+PLUGIN_PATHS = ['plugins/pelican-md-metayaml']
+PLUGINS = ['md_metayaml']
 DIRECT_TEMPLATES = ['index',]
 PAGE_PATHS = ['oot_modules']
 LOAD_CONTENT_CACHE=False
