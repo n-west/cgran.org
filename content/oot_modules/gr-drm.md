@@ -1,5 +1,4 @@
 ---
-title: gr-drm
 brief: DRM transmitter using GNU Radio
 author:
   - Felix Wunsch <uncnr[at]student.kit.edu>
@@ -19,6 +18,7 @@ tags:
   - audio
   - standard
 website: https://github.com/kit-cel/gr-drm
+title: gr-drm
 icon: https://avatars2.githubusercontent.com/u/11016077?v=3&s=200
 ---
 
