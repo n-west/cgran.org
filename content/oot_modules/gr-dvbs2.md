@@ -1,4 +1,5 @@
 ---
+title: gr-dvbs2
 brief: A DVB-S2 and DVB-S2X transmitter for GNU Radio
 author:
   - Ron Economos <w6rz@comcast.net>
@@ -8,7 +9,6 @@ dependencies:
   - gnuradio (>= 3.7)
 repo: https://github.com/drmpeg/gr-dvbs2.git
 stable_release: HEAD
-title: gr-dvbs2
 tags:
   - mpeg
   - video

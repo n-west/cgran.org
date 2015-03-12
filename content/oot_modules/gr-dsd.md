@@ -1,4 +1,5 @@
 ---
+title: gr-dsd
 brief: GNU Radio block for Digital Speech Decoder
 author:
   - Clayton Smith <argilo@gmail.com>
@@ -9,7 +10,6 @@ dependencies:
   - gnuradio (>= 3.7)
 repo: https://github.com/argilo/gr-dsd.git
 stable_release: HEAD
-title: gr-dsd
 tags:
   - speech
   - encoder

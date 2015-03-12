@@ -1,4 +1,5 @@
 ---
+title: gr-drm
 brief: DRM transmitter using GNU Radio
 author:
   - Felix Wunsch <uncnr[at]student.kit.edu>
@@ -12,7 +13,6 @@ dependencies:
   - FAAD2
 repo: https://github.com/kit-cel/gr-drm.git
 stable_release: HEAD
-title: gr-drm
 tags:
   - DRM
   - receiver

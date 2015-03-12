@@ -1,4 +1,5 @@
 ---
+title: gr-bluetooth
 brief: A bluetooth receiver implementation
 author:
   - Greatt Scott Gadgets <https://lists.sourceforge.net/lists/listinfo/ubertooth-general>
@@ -9,7 +10,6 @@ dependencies:
   - gnuradio (>= 3.7.0)
 repo: https://github.com/greatscottgadgets/gr-bluetooth.git
 stable_release: HEAD
-title: gr-bluetooth
 tags:
   - standard
   - IEEE

@@ -1,4 +1,5 @@
 ---
+title: gr-air-modes
 brief: A receiver for Mode S transponder signals
 author:
   - Nick Foster <bistromath@gmail.com>
@@ -12,7 +13,6 @@ dependencies:
   - osmosdr
 repo: https://github.com/bistromath/gr-air-modes.git
 stable_release: master
-title: gr-air-modes
 tags:
   - application
   - mode-s

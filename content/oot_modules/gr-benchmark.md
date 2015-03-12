@@ -1,4 +1,5 @@
 ---
+title: gr-benchmark
 brief: A performance measurement tool
 author:
   - Tim O'Shea
@@ -8,7 +9,6 @@ dependencies:
   - gnuradio (>= 3.7.2.1)
 repo: https://github.com/osh/gr-benchmark.git
 stable_release: HEAD
-title: gr-benchmark
 tags:
   - benchmark
   - application

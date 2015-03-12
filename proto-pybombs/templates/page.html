@@ -11,19 +11,33 @@
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
               <h2>{{ page.title }}</h2>
-              <span class="status-badge" style="paading-bottom: 10px;">
-              {{ page.type }}
-              </span> 
+              {% for tag in page.tags %}
+                  <span class="status-badge" style="paading-bottom: 10px;">
+                  {{ tag }}
+                  </span>
+              {% endfor %}
 
               <div class="row">
                 <div class="col-md-3">
                 <b>Developer</b>
                 </div>
                 <div class="col-md-6">
-                  {{ page.contact.author }}
+                  {{ author }}
                 </div>
               </div>
-     
+
+              <div class="row">
+                <div class="col-md-3">
+                <b>Dependencies</b>
+                </div>
+                <div class="col-md-6">
+                  {% for dep in dependencies %}
+                    dep
+                  {% endfor %}
+                </div>
+              </div>
+
+
               <div class="row">
                 <div class="col-md-3">
                   <b>Repository</b>
@@ -33,15 +47,6 @@
                 </div>
               </div>
 
-              <div class="row">
-                <div class="col-md-3">
-                  <b>GNU Radio Compatibility</b>
-                </div>
-                <div class="col-md-6">
-                  {{ page.gr_compat.min }} - {{ page.gr_compat.max }}
-                </div>
-              </div>
-              
               <div class="row">
                 <div class="col-md-3">
                   <b>Copyright owner</b>

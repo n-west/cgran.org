@@ -1,4 +1,5 @@
 ---
+title: gr-ais
 brief: Automatic Information System decoder for shipborne position reporting
 author:
   - Nick Foster <bistromath@gmail.com>
@@ -8,7 +9,6 @@ dependencies:
   - gnuradio (>= 3.7)
 repo: https://github.com/bistromath/gr-ais.git
 stable_release: HEAD
-title: gr-ais
 tags:
   - application
   - ais
