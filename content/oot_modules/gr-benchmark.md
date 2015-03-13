@@ -1,19 +1,32 @@
 ---
 title: gr-benchmark
-type: application
-contact :  
-    author: Tim O'Shea,
-    email: 
-website: http://stats.gnuradio.org
-copyright_owner: Tim O'Shea
-stable_release: master
-gr_compat: {min: v3.7.2.1, max: v3.7.*}
+brief: A performance measurement tool
+author:
+  - Tim O'Shea
+copyright_owner:
+  - Tim O'Shea
 dependencies:
-brief: >
-    A performance measurement tool for GNU Radio
-repo: https://github.com/osh/gr-benchmark.md
+  - gnuradio (>= 3.7.2.1)
+repo: https://github.com/osh/gr-benchmark.git
+stable_release: HEAD
+tags:
+  - benchmark
+  - application
+  - optimization
+  - simulation
+website: http://stats.gnuradio.org
 ---
 
-<div class="youtube" align="center">
-<iframe width="420" height="315" src="https://www.youtube.com/embed/dDj7DuHVV9E" frameborder="0"></iframe>
-</div>
+# Running the benchmark
+
+    cd gr-benchmark
+    ./gr_profiler.py
+
+or
+
+    ./gr_profiler.py -s  #(to submit results to stats.gnuradio.org)
+
+# Results/Analysis
+
+Compare results at
+http://stats.gnuradio.org

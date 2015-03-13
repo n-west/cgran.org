@@ -1,15 +1,24 @@
 ---
 title: gr-ais
-type: application
-contact :  {author: Nick Foster,
-            email: bistromath@gmail.com}
-website: https://github.com/bistromath/gr-ais
-copyright_owner: Nick Foster
-stable_release: master
-gr_compat: {min: v3.7, max: v3.7.*}
+brief: Automatic Information System decoder for shipborne position reporting
+author:
+  - Nick Foster <bistromath@gmail.com>
+copyright_owner:
+  - Nick Foster
 dependencies:
-description: >
-    Automatic Information System decoder for shipborne position
-    reporting for the Gnuradio project 
+  - gnuradio (>= 3.7)
 repo: https://github.com/bistromath/gr-ais.git
+stable_release: HEAD
+tags:
+  - application
+  - ais
+  - standard
+  - ship
+  - receiver
+website: https://github.com/bistromath/gr-ais
 ---
+
+
+Automatic Information System decoder for shipborne position reporting for the
+Gnuradio project
+

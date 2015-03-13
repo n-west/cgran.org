@@ -108,7 +108,7 @@
     <thead>
         <tr>
             <th data-field="name" data-sortable="true">Name</th>
-            <th class="hidden-xs" data-field="type" data-sortable="true">Type</th>
+            <th class="hidden-xs" data-field="type" data-sortable="true">Tags</th>
             <th data-field="description" data-sortable="true">Description</th>
             <th class="hidden-xs hidden-sm" data-field="repo" data-sortable="true">Repository</th>
         </tr>
@@ -123,10 +123,21 @@
                 </a>
             </td>
             <td class="hidden-xs">
-                {{ module.type }}
+                {% if module.tags is iterable and module.tags is not string %}
+                  {% for tag in module.tags %}
+                    {% if not loop.last %}
+                    {{ tag }},
+                    {% else %}
+                    {{ tag }}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                    {{ module.tags }}
+                {% endif %}
+
             </td>
             <td>
-                {{ module.description }}
+                {{ module.brief }}
             </td>
             <td class="hidden-xs hidden-sm">
                 <a href="{{ module.repo }}">

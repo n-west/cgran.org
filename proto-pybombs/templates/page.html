@@ -4,27 +4,63 @@
 <div class="headband" id="banner">
   <div class="container">
     <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
         <div class="jumbotron">
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3" id="headimage">
-              <img src="{{ SITEURL }}/theme/images/assets/identicono.png">
+              {% if page.icon is defined %}
+                <img class="img-responsive" src="{{ page.icon }}">
+              {% else %}
+                <img class="img-responsive" src="{{ SITEURL }}/theme/images/assets/identicono.png">
+              {% endif %}
             </div>
-            <div class="col-lg-8 col-md-8 col-sm-8">
+            <div class="col-lg-9 col-md-9 col-sm-9">
               <h2>{{ page.title }}</h2>
-              <span class="status-badge" style="paading-bottom: 10px;">
-              {{ page.type }}
-              </span> 
+              {% for tag in page.tags %}
+                  <span class="status-badge" style="paading-bottom: 10px;">
+                  {{ tag }}
+                  </span> &nbsp;
+              {% endfor %}
 
               <div class="row">
                 <div class="col-md-3">
                 <b>Developer</b>
                 </div>
                 <div class="col-md-6">
-                  {{ page.contact.author }}
+                {% if page.author is iterable and page.author is not string %}
+                  {% for author in page.author %}
+                    {% if not loop.last %}
+                    {{ author }},
+                    {% else %}
+                    {{ author }}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                    {{ page.author }}
+                {% endif %}
                 </div>
               </div>
-     
+
+              <div class="row">
+                <div class="col-md-3">
+                <b>Dependencies</b>
+                </div>
+                <div class="col-md-6">
+
+                {% if page.dependencies is iterable and page.dependencies is not string %}
+                  {% for dependency in page.dependencies %}
+                    {% if not loop.last %}
+                      {{ dependency }},
+                    {% else %}
+                      {{ dependency }}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                    {{ page.dependencies }}
+                {% endif %}
+                </div>
+              </div>
+
+
               <div class="row">
                 <div class="col-md-3">
                   <b>Repository</b>
@@ -36,19 +72,20 @@
 
               <div class="row">
                 <div class="col-md-3">
-                  <b>GNU Radio Compatibility</b>
-                </div>
-                <div class="col-md-6">
-                  {{ page.gr_compat.min }} - {{ page.gr_compat.max }}
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col-md-3">
                   <b>Copyright owner</b>
                 </div>
                 <div class="col-md-6">
-                  {{ page.copyright_owner }}
+                {% if page.copyright_owner is iterable and page.copyright_owner is not string %}
+                  {% for copyright_owner in page.copyright_owner %}
+                    {% if not loop.last %}
+                      {{ copyright_owner }},
+                    {% else %}
+                      {{ copyright_owner }}
+                    {% endif %}
+                  {% endfor %}
+                {% else %}
+                    {{ page.copyright_owner }}
+                {% endif %}
                 </div>
               </div>
 
@@ -64,7 +101,6 @@
             </div>
           </div>
         </div>
-      </div>
     </div>
   </div>
 </div>
