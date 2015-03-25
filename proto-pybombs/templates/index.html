@@ -4,96 +4,58 @@
     <div class="row">
         <div class="container">
             <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
-            <div id="headimage">
 		<div>
-	        <img src="{{ SITEURL }}/theme/images/assets/cgran-penta.png">
+	        <img src="theme/images/assets/cgran-penpar.png">
 	        </div>
-	    </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
-                <h1 style="font-size: 54px;">CGRAN</h1>
+                <h1 style="font-size: 54px; color: #fd6b5c">CGRAN</h1>
 		<p class="lead" style="padding-top: 30px;">
 		The Comprehensive GNU Radio Archive Network (CGRAN) is a free
 	       	open source repository for 3rd party GNU Radio applications
 	      	a.k.a Out Of Tree Modules that are not officially supported by
 	       	the GNU Radio project.
 		</p>
-		<a href="#gr-table" 
-			class="btn btn-sup btn-material-deeppurple" 
-			style="color: #fff;">
-			<i class="fa fa-database"></i>
-		    <span>Explore GR-OOT Modules</span>
-	            <div class="ripple-wrapper"></div>
-	        </a>
-            <div>
-                 <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules" 
-		    class="btn btn-default btn-raised" 
-		    style="color: #fd6b5c; background: #fff">
-		    <i class="fa fa-pencil-square"></i>
-		<span>Create gr-oot module</span>
-	        </a>
-                <a href="https://gnuradio.org/redmine/projects/pybombs/wiki/Contributing" 
-		    class="btn btn-default btn-raised" 
-		    style="color: #fd6b5c; background: #fff">
-		    <i class="fa fa-plus-square"></i>
-		<span>Submit gr-oot module</span>
-	        </a>
-            </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row" style="padding-top: 30px; padding-bottom: 15px;">
+<div style="background: #FFF8E1" id="headimage">
+<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
     <div class="container">
         <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="well">
-	    <h2 style="color: #fd6b5c;">GNU Radio</h2>
-	    <p class="lead" style="padding-top: 30px;">
+	    <div class="row">
+	    <div class="col-md-3" style="padding-top: 25px;" id="headimage">
+		    <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki"><img src="theme/images/assets/gr_logo_white.png"></a>
+	    </div>
+	    <div class="col-md-9">	
+	    <p class="lead" style="padding-top: 30px; color: #757575;">
 	    GNU Radio is a free software development toolkit that provides 
 	    signal processing blocks to implement software-defined radios and 
 	    signal processing systems. 
 	    </p>
-	    <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki" 
-		    class="btn btn-default btn-flat" 
-		    style="color: #fd6b5c;">
-		    <i class="fa fa-book"></i>
-		<span>GNU Radio Wiki</span>
-	    </a>
-            <a href="https://gnuradio.org/doc/doxygen/index.html" 
-		    class="btn btn-default btn-raised" 
-		    style="color: #fd6b5c;">
-                <i class="fa fa-file-code-o"></i>
-		<span>Doxygen C++ Manual</span>
-	    </a>
+            </div>
             </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
-	    <div class="well">
-	    <h2 style="color: #fd6b5c;">PyBOMBS</h2>
-	    <p class="lead" style="padding-top: 30px;">
-	    PyBOMBS (Python Build Overlay Managed Bundle System) is the
-	    GNU Radio install management system for resolving dependencies and
-	    pulling in out-of-tree projects.
+            <div class="row">
+            <div class="col-md-3" style="padding-top: 25px;" id="headimage">
+		    <a href="https://github.com/gnuradio/pybombs/"><img src="theme/images/assets/circlebombs.png"></a>
+	    </div>
+	    <div class="col-md-9">
+	    <p class="lead" style="padding-top: 30px; color: #757575">
+	    PyBOMBS is the GNU Radio install management system for resolving
+	    dependencies and pulling in out-of-tree projects.
 	    </p>
-            <a href="https://github.com/gnuradio/pybombs/" 
-		    class="btn btn-default btn-flat" 
-		    style="color: #fd6b5c;">
-                <i class="fa fa-github-square"></i>
-		<span>Fork on Github</span>
-	    </a>
-            <a href="https://github.com/gnuradio/pybombs/archive/master.zip" 
-		    class="btn btn-default btn-raised" 
-		    style="color: #fd6b5c;">
-                <i class="fa fa-download"></i>
-		<span>Download PyBOMBS</span>
-	    </a>
             </div>
+        </div>
         </div>
     </div>
 </div>
-<div style="background: #fff;">
+</div>
+<div style="background: #fff; padding-bottom: 50px;">
 <div class="container" id="gr-table">
-    <div style="text-align: center;">	    
+    <div style="text-align: center; padding: 20px 0px 0px 0px">	    
     <h2>Browse~Checkout~Hack</h2>
     </div>
 
@@ -149,6 +111,9 @@
     {% endfor %}
     </tbody>
     </table>
+</div>
+<div style="text-align: center; padding: 30px 0 30px 0px;">
+    <a href="javascript:void(0)" class="btn btn-primary">Load More OOT Modules</a>
 </div>
 </div>
 {% endblock %}

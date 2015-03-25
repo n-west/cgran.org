@@ -8,9 +8,14 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3" id="headimage">
               {% if page.icon is defined %}
-                <img class="img-responsive" src="{{ page.icon }}">
+	      {# URL of the OOT Module Logo to be provided in raw format #}
+                <img class="img-responsive" 
+		src="https://raw.githubusercontent.com/NinjaComics/cgran-frontend/master/proto-pybombs/static/images/assets/identicono.png">
               {% else %}
-                <img class="img-responsive" src="{{ SITEURL }}/theme/images/assets/identicono.png">
+	      {# If no URL is provided, we just replace jasonlong with github 
+	      user name of the OOT Module author to automatically generate the
+	      identicon #}
+                <img class="img-responsive" src="https://github.com/identicons/jasonlong.png">
               {% endif %}
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
