@@ -62,8 +62,16 @@ html, body {
     #headimage {
         display:none;
 }
-
-/ ---- Pygments Style ---- */
+/* footerbottom like Neville Longbottom */
+footerbottom {
+    background-color: #ff5722;
+    height: inherit;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+/* ---- Pygments Style ---- */
 
 .hll {
 background-color:#FFFFCC;
