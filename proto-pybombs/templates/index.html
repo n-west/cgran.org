@@ -1,58 +1,71 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="headerband" id="banner">
-    <div class="row">
-        <div class="container">
-            <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
-		<div>
-	        <img src="theme/images/assets/cgran-penpar.png">
-	        </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
-                <h1 style="font-size: 54px; color: #fd6b5c">CGRAN</h1>
-		<p class="lead" style="padding-top: 30px;">
-		The Comprehensive GNU Radio Archive Network (CGRAN) is a free
-	       	open source repository for 3rd party GNU Radio applications
-	      	a.k.a Out Of Tree Modules that are not officially supported by
-	       	the GNU Radio project.
-		</p>
-            </div>
-        </div>
-    </div>
-</div>
-<div style="background: #FFF8E1" id="headimage">
-<div class="row" style="padding-top: 15px; padding-bottom: 15px;">
+  <div class="row">
     <div class="container">
-        <div class="col-lg-6 col-md-6 col-sm-6">
-	    <div class="row">
-	    <div class="col-md-3" style="padding-top: 25px;" id="headimage">
-		    <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki"><img src="theme/images/assets/gr_logo_white.png"></a>
-	    </div>
-	    <div class="col-md-9">	
-	    <p class="lead" style="padding-top: 30px; color: #757575;">
-	    GNU Radio is a free software development toolkit that provides 
-	    signal processing blocks to implement software-defined radios and 
-	    signal processing systems. 
-	    </p>
-            </div>
-            </div>
+      <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+        <img src="theme/images/assets/cgran-penpar.png" width="60%"/>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+        <h1 style="font-size: 54px; color: #fd6b5c">CGRAN</h1>
+        <div data-toggle="collapse" data-target="#front-matter-detail" aria-expanded="false" aria-controls="collapseExample">
+        <br>
+        <h4 style="color: #fd6b5c">About</h4>
+        <i class="fa fa-chevron-down fa-4x" style="color: #fd6b5c"></i>
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="row">
-            <div class="col-md-3" style="padding-top: 25px;" id="headimage">
-		    <a href="https://github.com/gnuradio/pybombs/"><img src="theme/images/assets/circlebombs.png"></a>
-	    </div>
-	    <div class="col-md-9">
-	    <p class="lead" style="padding-top: 30px; color: #757575">
-	    PyBOMBS is the GNU Radio install management system for resolving
-	    dependencies and pulling in out-of-tree projects.
-	    </p>
-            </div>
-        </div>
-        </div>
+      </div>
     </div>
+  </div>
 </div>
+
+
+<div class="headerband collapse" id="front-matter-detail">
+  <div class="row">
+    <div class="container">
+      <p class="lead"  style="padding-top: 30px;">
+        The Comprehensive GNU Radio Archive Network (CGRAN) is a free
+        open source repository for 3rd party GNU Radio applications
+        a.k.a Out Of Tree Modules that are not officially supported by
+        the GNU Radio project.
+      </p>
+    </div>
+  </div>
+
+  <div style="background: #FFF8E1" id="headimage">
+    <div class="row" style="padding-top: 15px; padding-bottom: 15px;">
+      <div class="container">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="row">
+            <div class="col-md-3" style="padding-top: 25px;" id="headimage">
+              <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki"><img src="theme/images/assets/gr_logo_white.png"></a>
+            </div>
+    	    <div class="col-md-9">	
+            <p class="lead" style="padding-top: 30px; color: #757575;">
+              GNU Radio is a free software development toolkit that provides 
+              signal processing blocks to implement software-defined radios and 
+              signal processing systems. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="row">
+            <div class="col-md-3" style="padding-top: 25px;" id="headimage">
+              <a href="https://github.com/gnuradio/pybombs/"><img src="theme/images/assets/circlebombs.png"></a>
+    	      </div>
+            <div class="col-md-9">
+              <p class="lead" style="padding-top: 30px; color: #757575">
+                PyBOMBS is the GNU Radio install management system for resolving
+                dependencies and pulling in out-of-tree projects.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+
 <div style="background: #fff; padding-bottom: 50px;">
 <div class="container" id="gr-table">
     <div style="text-align: center; padding: 20px 0px 0px 0px">	    

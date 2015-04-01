@@ -11,7 +11,7 @@
               {% if page.icon is defined %}
 	      {# URL of the OOT Module Logo to be provided in raw format #}
                 <img class="img-responsive" 
-		src="https://raw.githubusercontent.com/NinjaComics/cgran-frontend/master/proto-pybombs/static/images/assets/identicono.png">
+		src="{{ page.icon }}">
               {% else %}
 	      {# If no URL is provided, we just replace jasonlong with github 
 	      user name of the OOT Module author to automatically generate the
@@ -77,6 +77,19 @@
                   <a href="{{ page.repo }}">{{ page.repo }}</a>
                 </div>
               </div>
+
+
+              <div class="row">
+                <div class="col-md-3">
+                  <b>Website</b>
+                </div>
+                <div class="col-md-6">
+                  <a href="{{ page.website }}">{{ page.website }}</a>
+                </div>
+              </div>
+
+
+
 
               <div class="row">
                 <div class="col-md-3">
