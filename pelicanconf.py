@@ -3,12 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'pybombs'
-SITENAME = u'CGRAN-Frontend'
+SITENAME = u'The Comprehensive GNU Radio Archive Network'
 
 PATH = 'content'
 
-TIMEZONE = 'Asia/Kolkata'
-SITEURL = 'http://nathanwest.us/ravi'
+TIMEZONE = 'US/Eastern'
+SITEURL = 'http://nathanwest.us/cgran'
 
 DEFAULT_LANG = u'en'
 
@@ -21,6 +21,9 @@ AUTHOR_FEED_RSS = None
 
 DEFAULT_PAGINATION = False
 
+FILES_TO_COPY = (
+            ('src/projects.html', 'projects/index.html'),
+            )
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
