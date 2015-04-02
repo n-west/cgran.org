@@ -9,23 +9,26 @@
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-3" id="headimage">
               {% if page.icon is defined %}
-	      {# URL of the OOT Module Logo to be provided in raw format #}
-                <img class="img-responsive" 
-		src="{{ page.icon }}">
+                {# URL of the OOT Module Logo to be provided in raw format #}
+                <img class="img-responsive" src="{{ page.icon }}">
               {% else %}
-	      {# If no URL is provided, we just replace jasonlong with github 
-	      user name of the OOT Module author to automatically generate the
-	      identicon #}
+                {# If no URL is provided, we just replace jasonlong with github 
+                user name of the OOT Module author to automatically generate the
+                identicon #}
                 <img class="img-responsive" src="https://github.com/identicons/jasonlong.png">
               {% endif %}
             </div>
             <div class="col-lg-9 col-md-9 col-sm-9">
               <h2>{{ page.title }}</h2>
+              {% if page.tags is iterable %}
               {% for tag in page.tags %}
+                {% if tag is defined %}
                   <span class="status-badge">
                   {{ tag }}
                   </span> &nbsp;
+                {% endif %}
               {% endfor %}
+              {% endif %}
               <br/>
               <br/>
 
@@ -74,7 +77,9 @@
                   <b>Repository</b>
                 </div>
                 <div class="col-md-6">
+                  {% if page.repo is string %}
                   <a href="{{ page.repo }}">{{ page.repo }}</a>
+                  {% endif %}
                 </div>
               </div>
 
@@ -84,7 +89,9 @@
                   <b>Website</b>
                 </div>
                 <div class="col-md-6">
+                  {% if page.website is string %}
                   <a href="{{ page.website }}">{{ page.website }}</a>
+                  {% endif %}
                 </div>
               </div>
 
@@ -98,13 +105,15 @@
                 <div class="col-md-6">
                 {% if page.copyright_owner is iterable and page.copyright_owner is not string %}
                   {% for copyright_owner in page.copyright_owner %}
+                    {% if copyright_owner is defined %}
                     {% if not loop.last %}
                       {{ copyright_owner }},
                     {% else %}
                       {{ copyright_owner }}
                     {% endif %}
+                    {% endif %}
                   {% endfor %}
-                {% else %}
+                {% elif copyright_owner is defined %}
                     {{ page.copyright_owner }}
                 {% endif %}
                 </div>
@@ -115,7 +124,9 @@
                   <b>Brief</b>
                 </div>
                 <div class="col-md-6">
-		  {{ page.brief }}
+                {% if page.brief is string %}
+                  {{ page.brief }}
+                {% endif %}
                 </div>
               </div>
 
