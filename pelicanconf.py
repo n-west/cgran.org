@@ -8,7 +8,8 @@ SITENAME = u'The Comprehensive GNU Radio Archive Network'
 PATH = 'content'
 
 TIMEZONE = 'US/Eastern'
-SITEURL = 'http://nathanwest.us/cgran'
+#SITEURL = 'http://nathanwest.us/cgran'
+SITEURL = 'http://www.cgran.org'
 
 DEFAULT_LANG = u'en'
 
