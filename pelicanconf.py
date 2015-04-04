@@ -28,7 +28,7 @@ FILES_TO_COPY = (
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 
-THEME= 'proto-pybombs'
+THEME= 'pybombs-theme'
 
 PLUGIN_PATHS = ['plugins/pelican-md-metayaml']
 PLUGINS = ['md_metayaml']
