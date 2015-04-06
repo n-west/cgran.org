@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head lang="en">
+    <meta charset="utf-8">
+    <title>{{ SITENAME }}</title>
+    <link href="{{ SITEURL }}/theme/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/bootstrap-table.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/material.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/ripples.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ SITEURL }}/theme/css/custom.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="bs-component">
+<div class="navbar navbar-default">
+    <div class ="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ SITEURL }}/index.html">CGRAN</a>
+            <a class="navbar-brand" href="{{ SITEURL }}/projects">Projects</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                <a href="bootstrap-elements.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Documentation<b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://gnuradio.org/redmine/projects/gnuradio/wiki/OutOfTreeModules">Create OOT Module</a></li>
+                    <li><a href="https://gnuradio.org/redmine/projects/pybombs/wiki/Contributing">Submit OOT Module</a></li>
+                    <li class="divider"></li>
+                    <li><a href="http://gnuradio.org/redmine/projects/pybombs/wiki">PyBOMBS Wiki</a></li>
+            	    <li><a href="https://gnuradio.org/doc/doxygen/index.html">GNU Radio Manual</a></li>
+                    <li class="divider"></li>
+            	    <li><a href="http://libvolk.org/doxygen/index.html">VOLK Documentation</a></li>
+                </ul>
+                <li><a href="https://www.gnuradio.org/redmine/projects/gnuradio/wiki">GNU Radio</a></li>
+                <li><a href="http://libvolk.org/">VOLK</a></li>
+        </div>
+    </div>
+</div>
+</div>
+        {% block content %}
+	{% endblock %}
+<!-- jQuery -->
+<script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
+
+<!-- Bootstrap js -->
+<script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/bootstrap-table.min.js"></script>
+
+<!-- Material and ripple js -->
+<script src="{{ SITEURL }}/theme/js/material.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/ripples.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $.material.init();
+  });
+</script>
+<script>
+  $(function () {
+    $('#tableId').bootstrapTable(); // init via javascript
+    
+    $(window).resize(function () {
+      $('#tableId').bootstrapTable('resetView');
+    });
+  });
+</script>
+<script>
+jQuery.fn.bootstrapTable.defaults.icons = { paginationSwitchDown: "fa fa-chevron-down",
+                                            paginationSwitchUp: "fa fa-chevron-up",
+                                            refresh: "fa fa-refresh",
+                                            toggle: "fa fa-table",
+                                            columns: "fa fa-filter"};
+</script>
+</body>
+<footer>
+<div class="footerbottom text-center">
+  &copy; 2015 Ravi Sharan and Nathan West<br>
+  This page is licensed under a <a href="http://creativecommons.org/licenses/by-nd/3.0/us/"> Creative Commons Attribution-NoDerivs 3.0 United States License</a>
+</div>
+</footer>
