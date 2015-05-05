@@ -120,9 +120,22 @@
             </td>
             <td class="hidden-xs hidden-sm">
                 {% if module.repo is string %}
-                <a href="{{ module.repo }}">
-                    {{ module.repo }}
-                </a>
+		  {% if "github" in module.repo %}
+		  <a href="{{ module.repo }}">
+		  <i class="fa fa-github-square"></i>
+		  Github
+                  </a>
+		  {% elif "git.osmocom.org" in module.repo %}
+ 		  <a href="{{ module.repo }}">
+		  <i class="fa fa-git-square"></i>
+		  Git repo
+                  </a>
+		  {% elif "bitbucket" in module.repo %}
+		  <a href="{{ module.repo }}">
+		  <i class="fa fa-bitbucket-square"></i>
+		  Bitbucket
+                  </a>
+		  {% endif %}
                 {% endif %}
             </td>
         </tr>
