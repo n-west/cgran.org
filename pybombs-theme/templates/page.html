@@ -23,7 +23,7 @@
               {% if page.tags is iterable %}
               {% for tag in page.tags %}
                 {% if tag is defined %}
-                  <span class="status-badge">
+                  <span class="label label-primary">
                   {{ tag }}
                   </span> &nbsp;
                 {% endif %}
@@ -80,7 +80,7 @@
                 </div>
                 <div class="col-md-6">
                   {% if page.repo is string %}
-                  <a href="{{ page.repo }}">{{ page.repo }}</a>
+                  <a href="{{ page.repo }}" target=blank>{{ page.repo }}</a>
                   {% endif %}
                 </div>
               </div>
@@ -92,7 +92,7 @@
                 </div>
                 <div class="col-md-6">
                   {% if page.website is string %}
-                  <a href="{{ page.website }}">{{ page.website }}</a>
+                  <a href="{{ page.website }}" target=blank>{{ page.website }}</a>
                   {% endif %}
                 </div>
               </div>
