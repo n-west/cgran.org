@@ -12,6 +12,9 @@
   <link href="{{ SITEURL }}/theme/css/ripples.min.css" rel="stylesheet">
   <link href="{{ SITEURL }}/theme/css/font-awesome.min.css" rel="stylesheet">
   <link href="{{ SITEURL }}/theme/css/custom.css" rel="stylesheet">
+  <link href="{{ SITEURL }}/theme/css/snackbar.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="{{ SITEURL }}/theme/images/assets/favicon.ico"
+  type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -25,7 +28,9 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="{{ SITEURL }}/index.html">CGRAN</a>
+    <a class="navbar-brand" href="{{ SITEURL }}/index.html">
+	    <img src="{{ SITEURL }}/theme/images/assets/btn-icon.png"
+	    style="height: 30px; padding-right: 5px;">CGRAN</a>
     <a class="navbar-brand" href="{{ SITEURL }}/projects">Projects</a>
   </div>
   <div class="navbar-collapse collapse navbar-responsive-collapse">
@@ -68,6 +73,7 @@
 <!-- Material and ripple js -->
 <script src="{{ SITEURL }}/theme/js/material.min.js"></script>
 <script src="{{ SITEURL }}/theme/js/ripples.min.js"></script>
+<script src="{{ SITEURL }}/theme/js/snackbar.min.js"></script>
 <script>
   $(document).ready(function() {
       $.material.init();
@@ -83,6 +89,12 @@
   });
 </script>
 <script>
+
+        $(function() {
+            $.snackbar({content: "Psst ! Install from CGRAN works only if PyBOMBS or PYBOMBSQtGUI is installed", timeout: 5000});
+        });
+</script>
+<script>
 jQuery.fn.bootstrapTable.defaults.icons = { paginationSwitchDown: "fa fa-chevron-down",
                                             paginationSwitchUp: "fa fa-chevron-up",
                                             refresh: "fa fa-refresh",
@@ -91,7 +103,7 @@ jQuery.fn.bootstrapTable.defaults.icons = { paginationSwitchDown: "fa fa-chevron
 </script>
 </body>
 <footer class="footer">
-<div class="container" style="text-align:center;">
+<div class="container" style="text-align:center; padding-top: 10px; padding-bottom: 10px;">
   <p>
   &copy; 2015 Ravi Sharan and Nathan West<br>
   This page is licensed under a <a href="http://creativecommons.org/licenses/by-nd/3.0/us/"> Creative Commons Attribution-NoDerivs 3.0 United States License</a>
