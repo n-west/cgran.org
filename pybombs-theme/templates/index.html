@@ -1,54 +1,49 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="headerband" id="banner" style="padding: 20px 0px 20px 0px;">
+<div class="headerband" id="banner" style="
+	background-image: url('theme/images/assets/gnu.jpg');
+	padding: 20px 0px 20px 0px;
+	background-size: cover;
+	background-position: center center;">
   <div class="row">
     <div class="container">
-      <div class="col-lg-4 col-md-4" style="text-align: center;">
-        <img src="theme/images/assets/cgran_logo.png"/>
-      </div>
-      <div class="col-lg-7 col-md-7" style="text-align: center;">
-        <h3 style="color: #fd6b5c">The Comprehensive GNU Radio Archive Network</h3>
-	<p class="lead"  style="padding-top: 30px; color: #757575">
-        The Comprehensive GNU Radio Archive Network (CGRAN) is a free
-        open source repository for 3rd party GNU Radio applications
-        a.k.a Out Of Tree Modules that are not officially supported by
-        the GNU Radio project.
-        </p>        
-      </div>
-      <div class="col-xs-1 col-md-1" id="headimage">
-	<a href="#front-matter-detail" class="btn btn-warning btn-fab btn-raised" 
-        data-toggle="collapse" aria-expanded="false" aria-controls="front-matter-detail" 
-        style="position: absolute; top: 215px; margin-left: 20px;">
-          <i class="fa fa-chevron-down" style="color: #e5e5e5"></i>
-        </a>
+      <div class="col-lg-12 col-md-12" style="text-align: center;">
+        <h2 style="color: #fdfdfd">The Comprehensive GNU Radio Archive Network</h2>
+	<p class="lead"  style="padding-top: 30px; color: #fff">
+		CGRAN is a free and open source repository for 3rd party GNU Radio
+		applications a.k.a Out Of Tree Modules that are not officially
+		supported by the GNU Radio project.
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<div class="headerband collapse" id="front-matter-detail" style="padding: 0px">
+<div class="headerband collapse" style="padding: 0px">
   <div style="background: #FFF8E1" id="headimage">
     <div class="row">
       <div class="container">
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="row">
             <div class="col-md-3" style="padding-top: 25px;" id="headimage">
-              <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki"><img src="theme/images/assets/gr_logo_white.png "></a>
+		    <a href="https://gnuradio.org/redmine/projects/gnuradio/wiki"><img
+			    src="theme/images/assets/gr_logo_white.png "></a>
             </div>
-    	    <div class="col-md-9">	
-            <p class="lead" style="padding-top: 30px; color: #757575;">
-              GNU Radio is a free software development toolkit that provides 
+	    <div class="col-md-9>
+            <p class="lead" style="padding-top: 30px; color: #757575;>
+              GNU Radio is a free software development toolkit that provides
               signal processing blocks to implement software-defined radios and 
-              signal processing systems. 
-              </p>
+              signal processing systems.
+            </p>
             </div>
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6">
           <div class="row">
             <div class="col-md-3" style="padding-top: 25px;" id="headimage">
-              <a href="https://github.com/gnuradio/pybombs/"><img src="theme/images/assets/circlebombs.png"></a>
-    	      </div>
+	      <a href="https://github.com/gnuradio/pybombs/"><img
+		      src="theme/images/assets/circlebombs.png"></a>
+    	    </div>
             <div class="col-md-9">
               <p class="lead" style="padding-top: 30px; color: #757575">
                 PyBOMBS is the GNU Radio install management system for resolving
@@ -64,8 +59,8 @@
 
 <div style="background: #fff; padding-bottom: 50px;">
 <div class="container" id="gr-table">
-    <div style="text-align: center; padding: 20px 0px 0px 0px">	    
-      <h2>Browse~Checkout~Hack</h2>
+    <div style="text-align: center; padding: 20px 0px 0px 0px">
+      <h2>Browse ~ Checkout ~ Hack</h2>
     </div>
 
     <table data-toggle="table"

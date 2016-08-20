@@ -18902,7 +18902,7 @@ legend {
   float: right;
 }
 .navbar {
-  background-color: #ff5722;
+  background-color: #fff;
   border: 0;
   border-radius: 0;
 }
@@ -19033,8 +19033,8 @@ fieldset[disabled] .navbar .btn-link:focus {
 }
 .navbar.navbar,
 .navbar-default.navbar {
-  background-color: #ff5722;
-  color: #fff;
+  background-color: #fff;
+  color: #72706f;
   margin-bottom: 0px;
 }
 .navbar.navbar .navbar-form .form-control-wrapper input.form-control::placeholder,
